@@ -25,6 +25,11 @@ import wedoPeripheralImage from './peripheral-connection/wedo/wedo-illustration.
 import wedoMenuImage from './peripheral-connection/wedo/wedo-small.svg';
 import wedoButtonImage from './peripheral-connection/wedo/wedo-button-illustration.svg';
 
+import OSCImage from './newblocks.png'
+import OSCInsetImage from './newblocks-small.png'
+import noiseImage from './newblocks.png'
+import noiseInsetImage from './newblocks-small.png'
+
 export default [
     {
         name: (
@@ -62,6 +67,46 @@ export default [
                 defaultMessage="Draw with your sprites."
                 description="Description for the 'Pen' extension"
                 id="gui.extension.pen.description"
+            />
+        ),
+        featured: true
+    },
+    {
+        name: (
+            <FormattedMessage
+                defaultMessage="OSC"
+                description="OSC function"
+                id="gui.extension.OSC.name"
+            />
+        ),
+        extensionId: 'OSC',
+        iconURL: OSCImage,
+        insetIconURL: OSCInsetImage,
+        description: (
+            <FormattedMessage
+                defaultMessage="OSC"
+                description="OSC function"
+                id="gui.extension.OSC.description"
+            />
+        ),
+        featured: true
+    },
+    {
+        name: (
+            <FormattedMessage
+                defaultMessage="Noise"
+                description="Basic Noise function"
+                id="gui.extension.noise.name"
+            />
+        ),
+        extensionId: 'noise',
+        iconURL: noiseImage,
+        insetIconURL: noiseInsetImage,
+        description: (
+            <FormattedMessage
+                defaultMessage="Noise"
+                description="Basic Noise function"
+                id="gui.extension.noise.description"
             />
         ),
         featured: true
